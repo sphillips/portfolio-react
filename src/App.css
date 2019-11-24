@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .App-logo {
@@ -7,16 +8,39 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* background-color: #282c34; */
+  background-color: #fff;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-size: calc(42px + 2vmin);
+  color: #222;
 }
 
 .App-link {
-  color: #09d3ac;
+  margin-right: 10px;
+  color: #222;
+  text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
+  font-size: calc(24px + 2vmin);
+}
+
+.App-link:hover {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.Nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  list-style-type: none;
+}
+
+.Header-name {
+  margin-right: 25px;
 }
