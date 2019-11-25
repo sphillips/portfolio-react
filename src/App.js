@@ -8,6 +8,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Home';
 import About from './About';
+import FullImage from './FullImage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
+          <Route path="/image/:id" children={<FullImage />}/>
         </Switch>
       </div>
     </Router>

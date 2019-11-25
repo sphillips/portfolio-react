@@ -1,0 +1,9 @@
+.portfolio-image-full {
+  max-width: 80%;
+}
+
+.img-caption {
+  color: #222;
+  font-family: 'Caveat', cursive;
+  font-size: calc(12px + 2vmin);
+}
