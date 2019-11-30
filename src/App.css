@@ -20,6 +20,11 @@
   text-decoration: none;
 }
 
+.Portfolio {
+  /* margin-left: 20px;
+  margin-right: 20px; */
+}
+
 .Portfolio img {
   margin: 5px;
 }

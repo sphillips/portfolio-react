@@ -10,15 +10,15 @@ import Fade from 'react-bootstrap/Fade';
 
 function About() {
   return (
-    <div className="About">
+    <div>
       <Header />
-      <Container>
+      <Container className="About">
         <Row>
           <Media>
             <Fade in={true} appear={true}>
-                <img src="https://s3.amazonaws.com/vdr/site_assets/sean_phillips_headshot.jpg" width="600px" alt="Sean Phillips headshot" className="mr-3" />
+                <img src="https://s3.amazonaws.com/vdr/site_assets/sean_phillips_headshot.jpg" width="400px" alt="Sean Phillips headshot" className="mr-3" />
             </Fade>
-            <Media.Body>
+            <Media.Body className="about-copy">
               <p>Musician, photographer, and web developer living in Berlin.</p>
               <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
       ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
