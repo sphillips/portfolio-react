@@ -1,17 +1,19 @@
-import React from 'react';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Fade from 'react-bootstrap/Fade';
-import Image from 'react-bootstrap/Image';
+import React from 'react'
+import Fade from 'react-bootstrap/Fade'
+import Image from 'react-bootstrap/Image'
 
-function Thumbnail(props) {
-  const url = `https://seanbphillips.com.s3.amazonaws.com/site_assets/thumbs/${props.img_id}.jpg`;
-
-  return (
+const Thumbnail = ({ id, alt, size }) =>
+  <div className={`thumbnail ${size ? size : ''}`}>
     <Fade in={true} appear={true}>
-      <a href={`image/${props.img_id}`}><Image src={url} alt={props.alt} fluid /></a>
+      <a href={`image/${id}`}>
+        <Image
+          className="thumbnail-image"
+          src={`http://seanbphillips.com.s3.amazonaws.com/site_assets/thumbs/${id}.jpg`}
+          alt={alt}
+          fluid
+        />
+      </a>
     </Fade>
-  );
-}
+  </div>
 
-export default Thumbnail;
+export default Thumbnail
